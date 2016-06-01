@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamso1/Node-Practice-20160601.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamso1/Node-Practice-20160601/issues"
+  },
+  "homepage": "https://github.com/iamso1/Node-Practice-20160601#readme",
+  "description": ""
+}
