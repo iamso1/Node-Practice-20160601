@@ -1,6 +1,7 @@
 var koa = require('koa');
 var Router = require('koa-router');
 var bodyparser=require("koa-bodyparser");
+var serve = require('koa-static');
 
 var app = koa();
 var router = new Router();
@@ -30,8 +31,22 @@ router.post('/bodyparser', function * (){
     this.body = this.request.body.id;
 });
 
+
+//test file system
+router.get('/package.json',function() {
+    this.body ='HOME';
+});
+
+
+
+//notice the priority between middleware and static 
+//add static file system 
+app.use(serve('./'));
+
 //add middleware 
 app.use(router.middleware());
+
+
 
 //connect
 app.listen(process.env.PORT, function() {
